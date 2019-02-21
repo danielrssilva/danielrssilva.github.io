@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+}
+.menu{
+    right:0;
+    max-width: 100px;
+}
+
+@media (max-width: 420px){
+    .menu{
+        
+    }
+}
