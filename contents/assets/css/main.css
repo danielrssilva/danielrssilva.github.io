@@ -1,0 +1,100 @@
+:root {
+    --pink: #fd297b;
+}
+
+body{
+    font-family: "Segoe UI";
+    background-color: white;
+}
+/*Menu with icons*/
+.menu{
+    text-align: center;
+    margin-top: 0;
+    right: 0;
+    position: fixed;
+    width: 91px;
+    height: 275px;
+    background-image: linear-gradient(to right, #ab3369, #ff5864);
+    border-radius: 0 0 0 50px;
+}
+.menu, .menu-icon, .menu-label, .menu-link{
+    transition: .8s all ease-in-out;  
+}
+.menu .menu-label{
+    padding-left: 100px;    
+}
+.menu:hover{
+    text-align: left;
+    width: 300px;
+}
+.menu:hover .menu-icon{
+
+    margin: 15px;
+}
+.menu:hover .menu-label{
+    padding-left: 30px;
+}
+.menu .menu-icon{
+    margin: 15px;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 100px;
+}
+.work-title{
+    color: var(--pink);
+    text-align: center;
+    padding-top: 160px;
+    margin-bottom: 100px;
+}
+.works{
+    /*
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+    */
+    overflow: hidden;
+    background-color: rgb(214, 214, 214);
+    width: 1700%;
+}
+.works .work-icon{
+    text-align: center;
+    float: left;
+    
+}
+.works .work-icon a{
+    /*
+    text-align: center;
+    float: left;
+    display: inline-block;  
+    */
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.skills{
+    
+}
+#about{
+    border: 1px solid purple;
+}
+#about:active{
+    border: 2px solid red;
+}
+.content{
+    width: 100px;
+    height: 500px;
+}
+#element::-webkit-scrollbar { 
+    display: none; 
+}
+@media (max-width: 420px){
+    .menu{
+        
+    }
+}
