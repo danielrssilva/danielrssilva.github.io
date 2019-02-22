@@ -8,28 +8,28 @@
     <title>SOON™</title>
 </head>
 <body>
-    <section class="center">
+    <section class="container">
         <section class="middle">
-        <h1 class="title">Danny</h1>
+        <h1>Danny</h1>
         <h1 class="soon">Soon</h1>
         </section>
     </section>
     <style>
     body {
         background-image: url("infobg.png");
-        background-size: cover;
-        background-repeat:   no-repeat;
+        background-size: 50% cover;
+        background-repeat: no-repeat;
         background-position: center center;
         font-family: "Bahnschrift", -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 80px;
         text-align: center;
         text-transform: uppercase;
+        color: #fd297b;
     }
     html, body{
         height: 100%;
     }
-    .center{
-        text-align: center;
+    .container{
         height: 100%;
         width: 100%;
         display: table;
@@ -37,13 +37,6 @@
     .middle{
         display: table-cell;
         vertical-align: middle;
-    }
-    .title{
-        font-family:"Bahnschrift", -apple-system, BlinkMacSystemFont, sans-serif;
-        color: #fd297b;
-    }
-    .soon{
-        color: #fd297b;
     }
     .soon::after{
         content: 'TM';
