@@ -43,7 +43,7 @@ body{
     overflow: hidden;
     color: var(--white);
     font-size: 35px;
-    font-family: Bahnschrift;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -143,7 +143,8 @@ body{
     text-align: center;
 }
 .skills-title{
-    font-family: Bahnschrift;
+    font-weight: normal;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 90px;
     color: var(--orange);
     line-height: 1.4;
