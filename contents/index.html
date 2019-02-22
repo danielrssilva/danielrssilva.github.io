@@ -7,33 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
-    <link rel="icon" href="assets/images/icon2.png">
-    <script src="main.js"></script>
+    <link rel="icon" href="assets/images/icon.png">
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
+    <header class="mobile-header">
+        <h1 class="mobile-title">Daniel Ribeiro</h1>
+    </header>
     <nav class="menu">
         <ul>
-            <li><a href="#home" class="menu-link"><img src="assets/images/home.svg" alt="Home" height="42" width="42" class="menu-icon"><span class="menu-label">Home</span></a></li>
-            <li><a href="#about" class="menu-link"><img src="assets/images/skills.svg" alt="Skills" height="42" width="42" class="menu-icon"><span class="menu-label">Skills</span></a></li>
-            <li><a href="#info" class="menu-link"><img src="assets/images/info.svg" alt="Info" height="42" width="42" class="menu-icon"><span class="menu-label">Informações</span></a></li>
+            <li>
+                <a href="#home" class="menu-link"><img src="assets/images/home.svg" alt="Home" height="42" width="42" class="menu-icon  home-icon"><span class="menu-label">Home</span></a>
+            <li>
+                <a href="#about" class="menu-link"><img src="assets/images/skills.svg" alt="Skills" height="42" width="42" class="menu-icon"><span class="menu-label">Skills</span></a>
+            <li>
+                <a href="#info" class="menu-link"><img src="assets/images/info.svg" alt="Info" height="42" width="42" class="menu-icon"><span class="menu-label">Informações</span></a>
         </ul>  
     </nav>
     <section id="home">
+        <div class="home-bg1"></div>
         <h1 class="title work-title">Meus Trabalhos</h1>
-        <div class="content">
-            <ul class="works">
-                <li class="work-icon"><a href="rise.html"><img src="assets/images/rise.svg"></a></li>
-                <li class="work-icon"><a href="paideia.html"><img src="assets/images/paideia.svg"></a></li>
-                <li class="work-icon"><a href="jg.html"><img src="assets/images/jungle.svg"></a></li>
-                <li class="work-icon"><a href="hive.html"><img src="assets/images/hive.svg"></a></li>
-            </ul>
-        </div>
+            <nav class="nav-menu">
+                <ul class="works">
+                    <li class="work-icon"><a href="rise.html"><img src="assets/images/rise.svg"></a></li>
+                    <li class="work-icon"><a href="paideia.html"><img src="assets/images/paideia.svg"></a></li>
+                    <li class="work-icon"><a href="jg.html"><img src="assets/images/jungle.svg"></a></li>
+                    <li class="work-icon"><a href="hive.html"><img src="assets/images/hive.svg"></a></li>
+                </ul>
+            </nav>
+        <img src="assets/images/bg2.svg" class="home-bg2">
     </section>
     <section id="about">
-        <h1 class="title skills">Skills</h1>
+        <section class="picture">
+            <h1 class="title about-title">Sobre</h1>
+            <div class="about-pic">
+                <img src="assets/images/me.png" alt="Danny" class="my-pic">
+            </div>
+        </section>
+        <h3 class="title skills-title">Skills</h1>
+            <div class="pill"></div>
+            <div class="empty-pill"></div>
     </section>
     <section id="info">
-        <div class="content"></div>
+        <h1 class="title info-title">Informações</h1>
+        <h2 class="subtitle">Phone</h2>
+        <span class="info-content">(19) 9 9595-6839</span>
+        <h2 class="subtitle">LinkedIn</h2>
+        <span class="info-content">../danielribeirossilva</span>
+        <h2 class="subtitle">Email</h2>
+        <span class="info-content">danielribeirosoaressilva@gmail.com</span>
+        <h2 class="subtitle">ArtStation</h2>
+        <span class="info-content">../danhya</span>
+        <div class="end-bg"><h1 class="thank-text">Thank you!</h1></div>
     </section>
 </body>
 </html>
