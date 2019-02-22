@@ -7,22 +7,29 @@
     <title>SOON™</title>
 </head>
 <body>
-    <center>
+    <center class="center">
         <h1 class="title">DANNY</h1>
         <h1 class="soon">SOON</h1>
     </center>
     <style>
-
+    .center{
+        display: table;
+     }
     .title{
+        display: table-cell;
+        vertical-align: middle;
         font-family: Bahnschrift;
         color: #fd297b;
     }
     .soon{
+        display: table-cell;
+        vertical-align: middle;
         font-family: Bahnschrift;
         color: #fd297b
     }
     .soon::after{
-       content: 'TM';
+        content: 'TM';
+        font-size: 20px;
     }
     </style>
 </body>
