@@ -17,12 +17,30 @@ body{
 }
 /* Menu content */
 .menu{
-    right: -300px;
+    display: table;
+    right: -230px;
     position: fixed;
-    width: 400px;
+    width: 325px;
     height: 275px;
-    background-image: linear-gradient(to right, #ab3369, #ff5864);
+    background-image: linear-gradient(to right, #ff5864, #ab3369);
     border-radius: 0 0 0 50px;
+}
+.menu-link::after{
+    content: '';
+    display: table-cell;
+    color: var(--white);
+    font-size: 35px;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
+    vertical-align: middle;
+}  
+a[href='#home']::after{
+    content: 'Home';
+}
+a[href='#about']::after{
+    content: 'Sobre';
+}
+a[href='#info']::after{
+    content: 'Informações';
 }
 .menu, .menu-icon, .menu-label, .menu-link{
     transition: .8s all ease-in-out;  
@@ -32,35 +50,16 @@ body{
 }
 .menu .menu-icon{
     text-align: center;
-    margin: 0 0 30px 30px;
-}
-.menu .home-icon{
-    margin: 30px 0 30px 30px;
-}
-.menu .menu-label{
-    padding: 0;
-    margin-left: 100px;  
-    overflow: hidden;
-    color: var(--white);
-    font-size: 35px;
-    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
+    margin: 33px 30px 0 30px;
 }
 .menu:hover{
     right: 0;
     overflow: hidden;
     text-align: left;
-    width: 350px;
 }
 .menu:hover .menu-icon{
     overflow: hidden;
-    margin: 30px 30px 0 30px;
-}
-.menu:hover .menu-label{
-    padding: 0;
-    margin: 0;
+    margin: 33px 30px 0 30px;
 }
 /* Content css */
 .home-bg1{
@@ -75,17 +74,17 @@ body{
 }
 .home-bg2{
     margin-top: -400px;
-    background-repeat: no-repeat;
     right: 55px;
     position: absolute;
     z-index: -1;
 }
 .title{
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 50;
     font-size: 100px;
     color: var(--pink);
     text-align: center;
+    font-family: Roboto;
 }
 .work-title{
     padding-top: 150px;
@@ -111,7 +110,7 @@ body{
     text-decoration: none;
 }
 .work-icon:hover{
-    transition: .6s all ease-in-out;
+    transition: .3s all ease-in-out;
     transform: scale(.9);
 }
 #about{
@@ -156,12 +155,13 @@ body{
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center; 
-    height: 1000px;
+    height: 800px;
     text-align: center;
 }
 .info-title{
     padding-top: 65px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 .subtitle{
     margin-top: 20px;
@@ -175,7 +175,6 @@ body{
     color: var(--secondary-pink);
 }
 .info-content{
-    font-family: Roboto;
     font-weight: 300;
     font-size: 22px;
     line-height: 1.21;
@@ -191,23 +190,17 @@ body{
     border: solid 5px var(--dark-pink);
     transform: rotate(-60deg);
 }
-.empty-pill{
-    width: 80px;
-    height: 15px;
-    border-radius: 50px;
-    border: solid 5px var(--dark-pink);
-    transform: rotate(-60deg);
+.empty.pill{
+    background: none;
 }
 
 .end-bg{
-    position: sticky;
     bottom: 0;
     width: 400px;
     height: 100px;
     background-image: linear-gradient(to right, #ab3369, #ff5864);
     border-radius: 100px 100px 0 0;
     margin: 0 auto;
-    margin-top: 60px;
     display: table;
 }
 .thank-text{
