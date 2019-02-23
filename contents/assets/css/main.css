@@ -2,6 +2,7 @@
     --pink: #fd297b;
     --secondary-pink: #ab3369;
     --orange: #ff5864;
+    --light-orange: #ff655b;
     --dark-pink: #AB3369;
     --white: #fff;
 }
@@ -24,6 +25,7 @@ body{
     height: 275px;
     background-image: linear-gradient(to right, #ff5864, #ab3369);
     border-radius: 0 0 0 50px;
+    z-index: 1;
 }
 .menu-link::after{
     content: '';
@@ -113,6 +115,7 @@ a[href='#info']::after{
     transition: .3s all ease-in-out;
     transform: scale(.9);
 }
+/* About section */
 #about{
     margin-top: 300px;
     background-image: url("../images/aboutbg.svg");
@@ -144,6 +147,9 @@ a[href='#info']::after{
     line-height: 1.33;
     text-align: center;
 }
+.skills{
+    margin: 0 auto;
+}
 .skills-title{
     font-weight: normal;
     font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -152,6 +158,56 @@ a[href='#info']::after{
     line-height: 1.4;
     text-align: center;
 }
+.skill-title{
+    font-family: Bahnschrift;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: var(--light-orange);
+}
+/* pill test */
+.pill-table{
+    margin: 0 auto;
+    text-align: center;
+}
+.table-header{
+    text-align: center;
+    margin: 0 10px;
+}
+tr{
+    margin: 0 10px;
+}
+.pill-collection{
+    height: 100px;
+    margin: 0 20px;
+    padding: 0;
+    overflow: hidden;
+}
+.pill-collection .pill-position{
+    text-align: center;
+    margin-top: 50px;
+    float: left;
+    margin: 30px -15px 0 -15px;
+}
+.pill-position .pill{
+    display: inline-block;
+}
+.pill{
+    width: 80px;
+    height: 15px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #fd297b, #ff655b);
+    border: solid 5px var(--dark-pink);
+    transform: rotate(-60deg);
+    margin: 0 auto;
+}
+.empty.pill{
+    background: var(--white);
+}
+/* Info section */
 #info{
     margin-top: 100px;
     background-image: url("../images/bg.png");
@@ -184,19 +240,6 @@ a[href='#info']::after{
     letter-spacing: normal;
     color: var(--orange);
 }
-/* pill test */
-.pill{
-    width: 80px;
-    height: 15px;
-    border-radius: 50px;
-    background-image: linear-gradient(to bottom, #fd297b, #ff655b);
-    border: solid 5px var(--dark-pink);
-    transform: rotate(-60deg);
-}
-.empty.pill{
-    background: none;
-}
-
 .end-bg{
     bottom: 0;
     width: 400px;
