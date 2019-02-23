@@ -119,6 +119,7 @@ a[href='#info']::after{
     height: 800px;
 }
 .picture{
+    display: table;
     float: left;
 }
 .about-pic{
@@ -133,7 +134,9 @@ a[href='#info']::after{
     width: 500px;
     height: 500px;
     margin: 0 auto;
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 30px;
 }
 .about-title{
     font-size: 100px;
