@@ -8,10 +8,11 @@
     <title>SOON™</title>
 </head>
 <body>
+    <p class="text">This page is soon to be released, please come back later.</p> 
     <section class="container">
         <section class="middle">
-        <h1>Danny</h1>
-        <h1 class="soon">Soon</h1>
+            <h1 class="title">Danny</h1>
+            <h1 class="soon">Soon</h1>
         </section>
     </section>
     <style>
@@ -24,7 +25,6 @@
         font-family: quantumregular;
         text-align: center;
         text-transform: uppercase;
-        color: #fd297b;
         font-size: 50px;
     }
     html, body{
@@ -39,16 +39,35 @@
         display: table-cell;
         vertical-align: middle;
     }
+    .title{
+        background: linear-gradient(to right, #fd297b, #ff5864);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     .soon{
         margin-top: -50px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 300;
+        background: linear-gradient(#fd297b, #ff5864);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .soon::after{
         content: 'TM';
         font-size: 30px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 300;
+    }
+    .text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background: linear-gradient(to left, #fd297b, #ff5864);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     @font-face {
         font-family: 'quantumregular';
