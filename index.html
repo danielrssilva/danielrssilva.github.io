@@ -9,9 +9,10 @@
 </head>
 <body>
     <p class="text">This page is soon to be released, please come back later.</p> 
+    
     <section class="container">
         <section class="middle">
-            <h1 class="title">Danny</h1>
+            <img src="logo.svg" alt="icon" class="icon">
             <h1 class="soon">Soon</h1>
         </section>
     </section>
@@ -39,13 +40,18 @@
         display: table-cell;
         vertical-align: middle;
     }
-    .title{
-        background: linear-gradient(to right, #fd297b, #ff5864);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .icon{
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     .soon{
-        margin-top: -50px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 300;
         background: linear-gradient(#fd297b, #ff5864);
@@ -55,7 +61,7 @@
     .soon::after{
         content: 'TM';
         font-size: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: quantumregular;
         font-weight: 300;
     }
     .text{
