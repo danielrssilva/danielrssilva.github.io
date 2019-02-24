@@ -114,11 +114,11 @@ a[href='#info']::after{
 /* About section */
 #about{
     margin-top: 300px;
+    padding-top: 60px;
     background-image: url("../images/aboutbg.svg");
-    height: 800px;
+    overflow:auto;
 }
 .picture{
-    display: table;
     float: left;
 }
 .about-pic{
@@ -128,6 +128,7 @@ a[href='#info']::after{
     border-radius: 50%;
     display: table;
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 .my-pic{
     width: 500px;
@@ -149,7 +150,7 @@ a[href='#info']::after{
 .skills-title{
     font-weight: normal;
     font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 90px;
+    font-size: 100px;
     color: var(--orange);
     line-height: 1.4;
     text-align: center;
@@ -163,18 +164,6 @@ a[href='#info']::after{
     line-height: 1.4;
     letter-spacing: normal;
     color: var(--light-orange);
-}
-/* pill test */
-.pill-table{
-    margin: 0 auto;
-    text-align: center;
-}
-.table-header{
-    text-align: center;
-    margin: 0 10px;
-}
-tr{
-    margin: 0 10px;
 }
 .pill-collection{
     height: 100px;
@@ -192,25 +181,38 @@ tr{
     display: inline-block;
 }
 .pill{
-    width: 80px;
-    height: 15px;
+    width: 110px;
+    height: 25px;
     border-radius: 50px;
     background-image: linear-gradient(to bottom, #fd297b, #ff655b);
     border: solid 5px var(--dark-pink);
-    transform: rotate(-60deg);
+    transform: scale(.5) rotate(-60deg);
     margin: 0 auto;
 }
 .empty.pill{
     background: var(--white);
 }
+.dev-skills{
+    padding-top: 30px;
+    text-align: center;
+}
+.skill-collection{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 260px;
+}
+.pill-collection .pill-position{
+    margin: 10px -73px 0 -15px;
+}
 /* Info section */
 #info{
-    margin-top: 100px;
+    margin: 300px 0 100px 0;
     background-image: url("../images/bg.png");
     background-size: 30%;
     background-repeat: no-repeat;
-    background-position: center; 
-    height: 800px;
+    background-position: center;
     text-align: center;
 }
 .info-title{
@@ -276,13 +278,25 @@ tr{
     .menu{
         display: none;
     }
+    #info{
+        background-size: cover;
+    }
     .end-bg{
         width:100%;
     }
 }
+@media (max-width: 1000px){
+    .picture{
+        width: 100%;
+        text-align: center;
+    }
+    .about-pic{
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 1280px){
     .title{
-        font-size: 46px;
         font-weight: 400;
     }
     .home-bg1{
@@ -299,7 +313,7 @@ tr{
         padding: 30px 0 20px 0;
         margin: 0 auto;
     }
-    /* About */
+    /* About section */
     #about{
         margin-top: 80px;
         height: 100%;
@@ -322,6 +336,7 @@ tr{
         height: 280px;
         padding-top: 10px;
     }
+    /* Skill section */
     .skills-title{
         font-size: 65px;
     }
@@ -331,7 +346,7 @@ tr{
     .skill-collection{
         text-align: center;
         margin: 0 auto;
-        padding: 0;
+        padding: 20px 0;
         width: 260px;
     }
     .pill{
@@ -342,12 +357,9 @@ tr{
     .pill-collection .pill-position{
         margin: 10px -73px 0 -15px;
     }
-
-    #info{
-        background-size: cover;
-    }
+    /* Info section */
     .info-title{
-        padding-top: 0;
+        padding: 0 inherit -100px inherit;
         font-size: 43px;
     }
     .subtitle{
