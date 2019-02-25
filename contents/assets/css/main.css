@@ -145,6 +145,7 @@ a[href='#info']::after{
 }
 .skills{
     margin: 0 auto;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .skills-title{
     font-weight: normal;
@@ -155,8 +156,7 @@ a[href='#info']::after{
     text-align: center;
 }
 .skill-title{
-    font-family: Bahnschrift;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -239,11 +239,13 @@ a[href='#info']::after{
 }
 a.link{
     text-decoration: none;
+    transition: .5s all;
+}
+a.link:visited{
+    color: var(--secondary-pink);
 }
 .link:hover{
-    background: linear-gradient(#fd297b, #ff5864);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--secondary-pink);
     transition: .5s all;
 }
 .link-image{
