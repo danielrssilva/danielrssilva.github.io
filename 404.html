@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>404 😔</title>
+    <style>
+            body {
+                overflow: hidden;
+                background-image: url("infobg.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                font-family: Bahnschrift;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+            html, body{
+                height: 100%;
+            }
+            .container{
+                height: 100%;
+                width: 100%;
+                display: table;
+             }
+            .middle{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .gif{
+                width: 280px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 30px;
+                background: linear-gradient(to left, #fd297b, #ff5864);
+                padding: 10px;
+            }
+            .text{
+                text-transform: none;
+                font-size: .4em;
+                position: absolute;
+                left: 50%;
+                top: 65%;
+                transform: translate(-50%);
+                background: linear-gradient(to left, #fd297b, #ff5864);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .error{
+                background: linear-gradient(to bottom, #fd297b, #ff5864);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0;
+                font-size: 1em;
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .go-back{
+                text-transform: none;
+                color: #ff5864;
+                text-decoration: none;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            </style>
+</head>
+<body>
+    <section class="container">
+        <section class="middle">
+            <h1 class="error">ERROR!<br>404</h1>
+            <img src="alagoinha.gif" alt="gif" class="gif">
+            <p class="text">A página que você está tentando acessar não existe ou pode ter sido deletada ou movida.</p>
+            <a href="index.html" class="go-back">Voltar</a> 
+        </section>
+    </section>
+</body>
+</html>
