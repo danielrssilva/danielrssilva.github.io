@@ -5,6 +5,8 @@
     --orange: #ff5864;
     --light-orange: #ff655b;
     --white: #fff;
+    --grey: #5A5A5A;
+    --dark-grey: #3b3b3b;
 }
 html{
     scroll-behavior: smooth;
@@ -108,7 +110,7 @@ a[href='#info']::after{
 }
 .work-icon:hover{
     transition: .3s all ease-in-out;
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 /* About section */
 #about{
@@ -384,4 +386,37 @@ a.link:visited{
     .info-content{
         font-size: 21px;
     }
+}
+/* Animation */
+@keyframes pop {
+    from{
+        transform: scale(0), rotate(-55deg);
+        opacity: 0;
+    }
+    to{ 
+        transform: scale(1), rotate(-60deg);
+        opacity: 1; 
+    }
+}
+@keyframes hover {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(.9);
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--grey);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-grey);
 }
