@@ -5,7 +5,9 @@ a[href='#home']::after{
 .work-icon:hover{
     transform: scale(1);
 }
-
+.hive-bee{
+    transform: rotate(90deg);
+}
 /* Page style based on the work */
 :root{
     --grey: #5A5A5A;
@@ -72,11 +74,13 @@ body{
     background: linear-gradient(to right, #FD297B,#16798A);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 .title.paideia-title{
     color: var(--paideia-green);
     width: 320px;
     font-size: 80px;
+    font-weight: bold;
 }
 .title.hive-title{
     color: var(--hive-brown);
@@ -222,19 +226,17 @@ body{
 .dev-img{
     width: 50%;
 }
-/* Meet the team */
+/* Meet the team section */
+/* Rise */
+.rise-collaborators{
+    background: url('../images/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .rise-meet-team{
     color: var(--pink);
     margin: 50px 0 80px 0; 
-}
-.hive-meet-team{
-    margin: 50px 0;
-    margin-top: 0;
-    text-transform: capitalize;
-    color: var(--hive-brown);
-    font-family: 'Amatic SC';
-    font-size: 100px;
-    font-weight: 700;
 }
 .collaborators-img-group{
     display: inline-block;
@@ -254,52 +256,77 @@ body{
     width: 150px;
     height: 150px;
 }
+.collab-assignment{
+    display: block;
+    font-size: 20px;
+    color: var(--pink);
+}
+/* Hive meet the team */
+.hive-collaborators{
+    background: url('../images/hivebg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hive-meet-team{
+    margin: 50px 0;
+    margin-top: 0;
+    text-transform: capitalize;
+    color: var(--hive-brown);
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    font-weight: 700;
+}
 .hive-team{
     border-radius: 0;
     background: none;
     width: 200px;
     height: 180px;
 }
-.collab-assignment{
-    display: block;
-    font-size: 20px;
-    color: var(--pink);
-}
 .hive-assignment{
     color: var(--hive-yellow);
     font-size: 28px;
 }
+/* Open ArtStation page */
 .artstation{
-    margin-top: 50px;
     text-align: center;
+    margin: 10px 0 100px 0;
 }
 .seemore-container{
     display: table;
     margin: 0 auto;
-    width: 290px;
-    border-radius: 100px;
-    background: linear-gradient(to right, #ff5864, #ff655b);
-    padding: 5px;
+    width: 280px;
+    padding: 0 10px 5px 10px;
     transition: .3s all;
-    
+    border-radius: 20px;
+}
+.seemore-container::before,.seemore-container::after{
+    position: relative;
+    vertical-align: middle;
+    color: var(--pink);
+    font-size: 50px;
+}
+.seemore-container::before{
+    content: '{';
+}
+.seemore-container::after{
+    content: '}';
+}
+.seemore-container:hover{
+    width: 300px;
+    transition: .3s all;
+}
+.seemore-container:hover .see-more{
+    transition: .3s all;
 }
 .see-more{
     display: table-cell;
     vertical-align: middle;
     font-size: 30px;
-    color: var(--light-orange);
-    background-color: #fff;
-    border-radius: 50px;
+    color: var(--pink);
     transition: .3s all;
 }
-.seemore-container:hover{
-    background: #16798A;
-    width: 300px;
-    transition: .3s all;
-}
-.seemore-container:hover  .see-more{
-    color: #16798A;
-    transition: .3s all;
+.hive-see-more,.hive-seemore-container::before,.hive-seemore-container::after{
+    color: var(--hive-yellow);
 }
 /* Reused work class from idex to show team frames on the center of the page */
 .works .work-icon{

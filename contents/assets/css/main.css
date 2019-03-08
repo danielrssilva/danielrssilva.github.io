@@ -209,9 +209,9 @@ a[href='#info']::after{
 }
 /* Info section */
 #info{
-    margin: 300px 0 100px 0;
-    background-image: url("../images/bg.png");
-    background-size: 30%;
+    margin: 200px 0 200px 0;
+    background-image: url("../images/info-bg/infobg.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
