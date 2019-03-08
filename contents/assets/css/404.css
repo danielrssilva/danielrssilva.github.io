@@ -1,0 +1,56 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+body{
+    background-image: url("../images/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container{
+    width: 100%;
+    display: table;
+    margin-top: 20px;
+}
+.error{
+    font-family: Bahnschrift;
+    color: var(--pink);
+    background: linear-gradient(to left, #fd297b, #ff5864);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.lost{
+    color: var(--pink);
+    background: linear-gradient(to bottom, #fd297b, #ff5864);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gif{
+    margin: 30px 0;
+    width: 280px;
+    border-radius: 30px;
+    background: linear-gradient(to left, #fd297b, #ff5864);
+    padding: 10px;
+}
+.text{
+    color: var(--orange);
+    background: linear-gradient(to left, #fd297b, #ff5864);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.go-back-footer{
+    font-family: Bahnschrift;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    display: table;
+}
+.go-back{
+    font-size: 1.5em;
+    color: var(--orange);
+}

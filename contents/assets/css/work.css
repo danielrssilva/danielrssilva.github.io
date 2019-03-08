@@ -20,20 +20,15 @@ a[href='#home']::after{
     --hive-yellow: #E7A200;
     --jg-brown: #6E572D;
     --jg-light-brown: #B59A61;
+
+    --hive-red: #914644;
+    --hive-green: #8AA255;
+    --hive-blue: #599DA7;
 }
 body{
     color: var(--grey);
     font-size: 30px;
     line-height: normal;
-}
-.red{
-    color: #914644;
-}
-.green{
-    color: #8AA255;
-}
-.blue{
-    color: #599DA7;
 }
 .workpage-menu{
     width: 100px;
@@ -101,8 +96,25 @@ body{
 .yellow-hive{
     color: var(--hive-yellow);
 }
+.red-hive{
+    color: var(--hive-red);
+    font-style: italic;
+}
+.blue-hive{
+    color: var(--hive-blue);
+}
+.green-hive{
+    color: var(--hive-green);
+}
+.brown-hive{
+    color: var(--hive-brown);
+}
 .bee{
     font-style: italic;
+}
+.crush{
+    font-style: normal;
+    font-weight: bolder;
 }
 .logo{
     text-align: center;
@@ -349,6 +361,12 @@ body{
     }
     .dev-img{
         width: 100%;
+    }
+    .hive-bee{
+        display: none;
+    }
+    .contructors{
+        font-size: 60px; 
     }
 }
 /* Animation */
