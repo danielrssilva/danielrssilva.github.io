@@ -276,7 +276,6 @@ body{
 /* Hive meet the team */
 .hive-collaborators{
     background: url('../images/hivebg.png');
-    background-size: contain;
     background-repeat: no-repeat;
 }
 .hive-meet-team{
@@ -362,7 +361,7 @@ body{
         font-size: 60px; 
     }
 }
-@media(max-width: 650px){
+@media(max-width: 810px){
     .header-text{
         width: 90%;
     }
