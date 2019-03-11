@@ -387,25 +387,6 @@ a.link:visited{
         font-size: 21px;
     }
 }
-/* Animation */
-@keyframes pop {
-    from{
-        transform: scale(0), rotate(-55deg);
-        opacity: 0;
-    }
-    to{ 
-        transform: scale(1), rotate(-60deg);
-        opacity: 1; 
-    }
-}
-@keyframes hover {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(.9);
-    }
-}
 
 /* Scrollbar */
 ::-webkit-scrollbar {

@@ -347,7 +347,7 @@ body{
 .end-bg{
     margin-top: 100px;
 }
-@media(max-width: 400px){
+@media(max-width: 420px){
     .title{
         margin-top: 180px;
     }
