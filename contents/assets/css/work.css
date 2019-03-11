@@ -1,0 +1,390 @@
+/* Reseting some stuff built in the main CSS */
+a[href='#home']::after{
+    content: none;
+}
+.work-icon:hover{
+    transform: scale(1);
+}
+.hive-bee{
+    transform: rotate(90deg);
+}
+/* Page style based on the work */
+:root{
+    --grey: #5A5A5A;
+    --rise-pink: #FD297B;
+    --rise-blue: #16798A;
+    --paideia-green: #86C440;
+    --paideia-purple: #AA489A;
+    --hive-brown: #5C2525;
+    --hive-light-brown: #8A492C;
+    --hive-yellow: #E7A200;
+    --jg-brown: #6E572D;
+    --jg-light-brown: #B59A61;
+
+    --hive-red: #914644;
+    --hive-green: #8AA255;
+    --hive-blue: #599DA7;
+}
+body{
+    color: var(--grey);
+    font-size: 30px;
+    line-height: normal;
+}
+.workpage-menu{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #fd297b,#FF5864);
+    border-radius: 0 0 45px 0;
+    display: table;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+.workpage-icon{
+    vertical-align: middle;
+    display: table-cell;
+}
+.home-icon{
+    width: 55px;
+    height: 55px;
+}
+.work-header{
+    animation: fadeIn 2s;
+    height: 100%;
+    text-align: center;
+}
+.title{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.subtitle{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+}
+.title.rise-title{
+    width: 300px;
+    background: linear-gradient(to right, #FD297B,#16798A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.title.paideia-title{
+    color: var(--paideia-green);
+    width: 320px;
+    font-size: 80px;
+    font-weight: bold;
+}
+.title.hive-title{
+    color: var(--hive-brown);
+    width: 320px;
+    font-size: 120px;
+    font-weight: 700;
+    font-family: 'Amatic SC';
+}
+.title.jg-title{
+    color: var(--hive-brown);
+    width: 300px;
+    font-weight: 700;
+    font-size: 75px;
+    background: linear-gradient(to bottom left, #6E572D,#B59A61);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.yellow-hive{
+    color: var(--hive-yellow);
+}
+.red-hive{
+    color: var(--hive-red);
+    font-style: italic;
+}
+.blue-hive{
+    color: var(--hive-blue);
+}
+.green-hive{
+    color: var(--hive-green);
+}
+.brown-hive{
+    color: var(--hive-brown);
+}
+.bee{
+    font-style: italic;
+}
+.crush{
+    font-style: normal;
+    font-weight: bolder;
+}
+.logo{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+.header-text{
+    font-style: italic;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+.rise-table{
+    margin: 0 auto;
+}
+.rise-meaning{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: middle;
+    background: linear-gradient(to right, #FD297B,#16798A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.rise-meaning::first-letter{
+    font-size: 60px;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+}
+.hive{
+    background-image: url('../images/watermark/hive-watermark.png');
+}
+.rise{
+    background-image: url('../images/watermark/rise-watermark.png');
+}
+.paideia{
+    background-image: url('../images/watermark/paideia-watermark.png');
+}
+.jgtimer{
+    background-image: url('../images/watermark/jg-watermark.png');
+}
+.first-p{
+    margin-bottom: 50px;
+}
+.hive-first-p{
+    text-align: center;
+    font-size: 30px;
+}
+.work-text{
+    text-align: justify;
+}
+.figure-section{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #A8A8A8;
+    font-style: italic;
+    font-size: 23px;
+    padding-bottom: 15px;
+}
+.jg-figcaption{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+    color: #6E572D;
+    font-size: 30px;
+    width: 200px;
+    margin: 0 auto;
+}
+.rise-sample{
+    display: inline-block;
+    width: 90%;
+    margin: 30px 0;
+}
+.jg-sample{
+    width: 200px;
+}
+.hive-type-subtitle{
+    font-family: 'Amatic SC';
+    font-size: 75px;
+    font-weight: 700;
+    color: var(--hive-brown);
+    margin-top: 35px;
+}
+.hive-tile{
+    width: 220px;
+}
+.hive-tile~figcaption{
+    font-size: 34px;
+}
+.queen-tile{
+    margin: 20px 0;
+}
+.tips{
+    font-size: 30px;
+}
+.collab-name{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    color: var(--hive-brown);
+    font-size: 50px;
+}
+.collab-name::first-letter{
+    color: var(--hive-yellow)
+}
+.hive-type-subtitle::first-letter{
+    color: var(--hive-yellow);
+}
+.hive-img-sample{
+    width: 100%;
+}
+.dev-img{
+    width: 50%;
+}
+/* Meet the team section */
+/* Rise */
+.rise-collaborators{
+    background: url('../images/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rise-meet-team{
+    color: var(--pink);
+    margin: 50px 0 80px 0; 
+}
+.collaborators-img-group{
+    display: inline-block;
+    text-align: center;
+}
+.figure-section-collaborator{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-family: Bahnschrift, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--orange);
+}
+.collaborator-img{
+    background: linear-gradient(#ff5864, #fd297b);
+    padding: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.collab-assignment{
+    display: block;
+    font-size: 20px;
+    color: var(--pink);
+}
+/* Hive meet the team */
+.hive-collaborators{
+    background: url('../images/hivebg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hive-meet-team{
+    margin: 50px 0;
+    margin-top: 0;
+    text-transform: capitalize;
+    color: var(--hive-brown);
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    font-weight: 700;
+}
+.hive-team{
+    border-radius: 0;
+    background: none;
+    width: 200px;
+    height: 180px;
+}
+.hive-assignment{
+    color: var(--hive-yellow);
+    font-size: 28px;
+}
+/* Open ArtStation page */
+.artstation{
+    text-align: center;
+    margin: 10px 0 100px 0;
+}
+.seemore-container{
+    display: table;
+    margin: 0 auto;
+    width: 280px;
+    padding: 0 10px 5px 10px;
+    transition: .3s all;
+    border-radius: 20px;
+}
+.seemore-container::before,.seemore-container::after{
+    position: relative;
+    vertical-align: middle;
+    color: var(--pink);
+    font-size: 50px;
+}
+.seemore-container::before{
+    content: '{';
+}
+.seemore-container::after{
+    content: '}';
+}
+.seemore-container:hover{
+    width: 300px;
+    transition: .3s all;
+}
+.seemore-container:hover .see-more{
+    transition: .3s all;
+}
+.see-more{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+    color: var(--pink);
+    transition: .3s all;
+}
+.hive-see-more,.hive-seemore-container::before,.hive-seemore-container::after{
+    color: var(--hive-yellow);
+}
+/* Reused work class from idex to show team frames on the center of the page */
+.works .work-icon{
+    margin: 0 20px;
+}
+.end-bg{
+    margin-top: 100px;
+}
+@media(max-width: 400px){
+    .title{
+        margin-top: 180px;
+    }
+    .header-text{
+        width: 90%;
+    }
+    .container{
+        font-size: 18px;
+        padding: 0;
+        width: 80%;
+    }
+    .dev-img{
+        width: 100%;
+    }
+    .hive-bee{
+        display: none;
+    }
+    .contructors{
+        font-size: 60px; 
+    }
+}
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background:  linear-gradient(to bottom, #fd297b,#FF655B);
+}
+::-webkit-scrollbar-thumb:hover {
+    background:  linear-gradient(to top, #fd297b,#FF655B);
+}
