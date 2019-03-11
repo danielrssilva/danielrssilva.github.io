@@ -14,7 +14,6 @@ body{
     margin-top: 20px;
 }
 .error{
-    font-family: Bahnschrift;
     color: var(--pink);
     background: linear-gradient(to left, #fd297b, #ff5864);
     -webkit-background-clip: text;
