@@ -351,22 +351,26 @@ body{
     .title{
         margin-top: 180px;
     }
-    .header-text{
-        width: 90%;
-    }
     .container{
         font-size: 18px;
         padding: 0;
-        width: 80%;
     }
     .dev-img{
         width: 100%;
     }
-    .hive-bee{
-        display: none;
-    }
     .contructors{
         font-size: 60px; 
+    }
+}
+@media(max-width: 650px){
+    .header-text{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .hive-bee{
+        display: none;
     }
 }
 /* Animation */
