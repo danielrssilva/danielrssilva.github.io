@@ -313,24 +313,30 @@ a.link:visited{
         display: inline-block;
         margin: 0 auto;
     }
-}
-@media (max-width: 1280px){
-    .title{
-        font-weight: 400;
+    #home{
+        background: url(../images/bg1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .home-bg1{
-        top: 300px;
-        left: -390px;
+        display: none;
     }
     .home-bg2{
-        margin-top: -530px;
+        display: none;
+    }
+}
+@media (max-width: 1280px){
+    .home-bg2{
+        display: none;
     }
     .work-image{
-        width: 230px;
+        width: 65%;
     }
     .work-title{
         padding: 30px 0 20px 0;
         margin: 0 auto;
+        width: 82%;
     }
     /* About section */
     #about{
