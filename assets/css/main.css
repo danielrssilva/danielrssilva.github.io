@@ -80,7 +80,7 @@ a[href='#info']::after{
 }
 .title{
     text-transform: uppercase;
-    font-weight: 50;
+    font-weight: 400;
     font-size: 100px;
     color: var(--pink);
     text-align: center;
