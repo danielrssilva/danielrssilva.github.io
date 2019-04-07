@@ -117,6 +117,7 @@ a[href='#info']::after{
     margin-top: 300px;
     padding-top: 60px;
     background-image: url("../images/aboutbg.svg");
+    animation: animatedBackground 100s linear infinite;
     overflow:auto;
 }
 .picture{
@@ -300,6 +301,9 @@ a.link:visited{
     #info{
         background-size: cover;
     }
+    #about{
+        animation: animatedBackground 20s linear infinite;
+    }
     .end-bg{
         width:100%;
     }
@@ -391,6 +395,14 @@ a.link:visited{
     }
     .info-content{
         font-size: 21px;
+    }
+}
+@keyframes animatedBackground {
+	from { 
+        background-position: 0 0; 
+    }
+	to { 
+        background-position: 100% 0; 
     }
 }
 
