@@ -181,6 +181,11 @@ body{
     text-align: center;
     font-size: 30px;
 }
+.jam-icon{
+    width: 290px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .work-text{
     text-align: justify;
 }
