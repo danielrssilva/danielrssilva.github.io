@@ -145,7 +145,7 @@ a[href='#info']::after{
     margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
-    padding-top: 30px;
+    padding: 30px;
 }
 .about-title{
     font-size: 100px;
