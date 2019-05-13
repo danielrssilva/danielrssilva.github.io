@@ -131,20 +131,13 @@ a[href='#info']::after{
     float: left;
 }
 .about-pic{
-    width: 566px;
-    height: 566px;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(to bottom, #ff5864, #fd297b);
     border-radius: 50%;
     display: table;
     margin-left: 30px;
     margin-bottom: 50px;
-}
-.my-pic{
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
     padding: 30px;
 }
 .about-title{
@@ -363,13 +356,9 @@ a.link:visited{
         font-size: 70px;
     }
     .about-pic{
-        width: 300px;
-        height: 300px;
-    }
-    .my-pic{
         width: 280px;
         height: 280px;
-        padding-top: 10px;
+        padding: 20px;
     }
     /* Skill section */
     .skills-title{
