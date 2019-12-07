@@ -1,0 +1,118 @@
+
+:root{
+    --edimm-red:          #E50304;
+    --edimm-orange:       #e55603;
+    --edimm-light-orange: #ff8b00;
+    --edimm-yellow:       #ecce30;
+    --edimm-green:        #028128;
+    --edimm-cyan:         #028178;
+    --edimm-blue:         #004dff;
+    --edimm-purple:       #770888;
+    --edimm-violet:       #4C0888;
+}
+.edimm-title{
+    margin-top: 50px;
+}
+.comfortaa{
+    font-family: Comfortaa;
+}
+.bold{
+    font-weight: bold;
+}
+.edimm-red{
+    color: var(--edimm-red);
+}
+.edimm-orange{
+    color: var(--edimm-orange);
+}
+.edimm-light-orange{
+    color: var(--edimm-light-orange);
+}
+.edimm-yellow{
+    color: var(--edimm-yellow);
+}
+.edimm-green{
+    color: var(--edimm-green);
+}
+.edimm-cyan{
+    color: var(--edimm-cyan);
+}
+.edimm-blue{
+    color: var(--edimm-blue);
+}
+.edimm-purple{
+    color: var(--edimm-purple);
+}
+.edimm-violet{
+    color: var(--edimm-violet);
+}
+.work-icon{
+    margin: 0 !important;
+    padding: 30px;
+    width: 180px;
+    font-family: Comfortaa;
+}
+.tools-title,.timeline-title, .logo-title{
+    font-size: 30px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: Comfortaa;
+}
+.timeline-table{
+    margin-bottom: 60px;
+}
+.timeline-title{
+    background: linear-gradient(to right, #E50304,#e55603);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.tools-title{
+    background: linear-gradient(to right, #ff8b00,#ff8b00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.logo-title{
+    background: linear-gradient(to right, #ff8b00, #ecce30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: -70px;
+}
+.year{
+    font-family: Comfortaa;
+}
+.year-work{
+    text-align: justify;
+    padding-left: 10px;
+}
+.light-grey{
+    color: rgb(163, 163, 163) !important;
+}
+figcaption{
+    font-family: Comfortaa;
+}
+.edimm-white-logo{
+    background: #262626;
+    padding: 30px 30px;
+    width: 170px;
+}
+.artstation{
+    font-weight: bold;
+}
+.see-more{
+    color: var(--edimm-purple);
+}
+.see-more:hover{
+    color: var(--edimm-blue);
+}
+.seemore-container::before,.seemore-container::after{
+    color: var(--edimm-violet);
+}
+.edimm-thanks{
+    width: 100px;
+}
