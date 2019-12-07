@@ -186,7 +186,6 @@ a[href='#info']::after{
     width: 110px;
     height: 25px;
     border-radius: 50px;
-    background: linear-gradient(to bottom, #fd297b, #ff655b);
     background: linear-gradient(to right, #fd297b, #ff655b);
     border: solid 5px var(--dark-pink);
     transform: scale(.5) rotate(-60deg);
