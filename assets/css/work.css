@@ -1,3 +1,10 @@
+/* 
+
+
+    Developed by Daniel Ribeiro.
+
+
+*/
 /* Reseting some stuff built in the main CSS */
 a[href='#home']::after{
     content: none;
@@ -11,24 +18,29 @@ a[href='#home']::after{
 /* Page style based on the work */
 :root{
     --grey: #5A5A5A;
+
     --rise-pink: #FD297B;
     --rise-blue: #16798A;
-    --paideia-green: #86C440;
+
+    --paideia-green:  #86C440;
     --paideia-purple: #AA489A;
-    --hive-brown: #5C2525;
+
+    --hive-brown:       #5C2525;
     --hive-light-brown: #8A492C;
-    --hive-yellow: #E7A200;
-    --jg-brown: #6E572D;
+    --hive-yellow:      #E7A200;
+
+    --jg-brown:       #6E572D;
     --jg-light-brown: #B59A61;
 
-    --hive-red: #914644;
+    --hive-red:   #914644;
     --hive-green: #8AA255;
-    --hive-blue: #599DA7;
+    --hive-blue:  #599DA7;
 }
 body{
     color: var(--grey);
     font-size: 30px;
     line-height: normal;
+    font-family: 'Segoe UI';
 }
 .workpage-menu{
     width: 100px;
@@ -57,6 +69,12 @@ body{
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 30px;
+}
+.home-bg2,.home-bg1{
+    opacity: 0.45;
+}
+.hive-bee1, .hive-bee{
+    opacity: 1;
 }
 .subtitle{
     text-transform: uppercase;
@@ -174,6 +192,11 @@ body{
     text-align: center;
     font-size: 30px;
 }
+.jam-icon{
+    width: 290px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .work-text{
     text-align: justify;
 }
@@ -276,7 +299,6 @@ body{
 /* Hive meet the team */
 .hive-collaborators{
     background: url('../images/hivebg.png');
-    background-size: contain;
     background-repeat: no-repeat;
 }
 .hive-meet-team{
@@ -347,26 +369,30 @@ body{
 .end-bg{
     margin-top: 100px;
 }
-@media(max-width: 400px){
+@media(max-width: 420px){
     .title{
         margin-top: 180px;
-    }
-    .header-text{
-        width: 90%;
     }
     .container{
         font-size: 18px;
         padding: 0;
-        width: 80%;
     }
     .dev-img{
         width: 100%;
     }
-    .hive-bee{
-        display: none;
-    }
     .contructors{
         font-size: 60px; 
+    }
+}
+@media(max-width: 900px){
+    .header-text{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .hive-bee{
+        display: none;
     }
 }
 /* Animation */

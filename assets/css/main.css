@@ -1,3 +1,10 @@
+/* 
+
+
+    Developed by Daniel Ribeiro.
+
+
+*/
 :root {
     --pink: #fd297b;
     --secondary-pink: #ab3369;
@@ -80,7 +87,7 @@ a[href='#info']::after{
 }
 .title{
     text-transform: uppercase;
-    font-weight: 50;
+    font-weight: 400;
     font-size: 100px;
     color: var(--pink);
     text-align: center;
@@ -117,27 +124,21 @@ a[href='#info']::after{
     margin-top: 300px;
     padding-top: 60px;
     background-image: url("../images/aboutbg.svg");
+    animation: animatedBackground 100s linear infinite;
     overflow:auto;
 }
 .picture{
     float: left;
 }
 .about-pic{
-    width: 566px;
-    height: 566px;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(to bottom, #ff5864, #fd297b);
     border-radius: 50%;
     display: table;
     margin-left: 30px;
     margin-bottom: 50px;
-}
-.my-pic{
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 30px;
+    padding: 30px;
 }
 .about-title{
     font-size: 100px;
@@ -185,7 +186,7 @@ a[href='#info']::after{
     width: 110px;
     height: 25px;
     border-radius: 50px;
-    background: linear-gradient(to bottom, #fd297b, #ff655b);
+    background: linear-gradient(to right, #fd297b, #ff655b);
     border: solid 5px var(--dark-pink);
     transform: scale(.5) rotate(-60deg);
     margin: 0 auto;
@@ -300,6 +301,9 @@ a.link:visited{
     #info{
         background-size: cover;
     }
+    #about{
+        animation: animatedBackground 20s linear infinite;
+    }
     .end-bg{
         width:100%;
     }
@@ -313,24 +317,30 @@ a.link:visited{
         display: inline-block;
         margin: 0 auto;
     }
-}
-@media (max-width: 1280px){
-    .title{
-        font-weight: 400;
+    #home{
+        background: url(../images/bg1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .home-bg1{
-        top: 300px;
-        left: -390px;
+        display: none;
     }
     .home-bg2{
-        margin-top: -530px;
+        display: none;
+    }
+}
+@media (max-width: 1280px){
+    .home-bg2{
+        display: none;
     }
     .work-image{
-        width: 230px;
+        width: 65%;
     }
     .work-title{
         padding: 30px 0 20px 0;
         margin: 0 auto;
+        width: 82%;
     }
     /* About section */
     #about{
@@ -346,13 +356,9 @@ a.link:visited{
         font-size: 70px;
     }
     .about-pic{
-        width: 300px;
-        height: 300px;
-    }
-    .my-pic{
-        width: 280px;
-        height: 280px;
-        padding-top: 10px;
+        width: 260px;
+        height: 260px;
+        padding: 20px;
     }
     /* Skill section */
     .skills-title{
@@ -387,23 +393,14 @@ a.link:visited{
         font-size: 21px;
     }
 }
-/* Animation */
-@keyframes pop {
-    from{
-        transform: scale(0), rotate(-55deg);
-        opacity: 0;
+
+/* Skill background animation */
+@keyframes animatedBackground {
+	0% { 
+        background-position: 0 0; 
     }
-    to{ 
-        transform: scale(1), rotate(-60deg);
-        opacity: 1; 
-    }
-}
-@keyframes hover {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(.9);
+	100% { 
+        background-position: 100% 0; 
     }
 }
 

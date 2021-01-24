@@ -1,3 +1,10 @@
+/* 
+
+
+    Developed by Daniel Ribeiro.
+
+
+*/
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
@@ -14,7 +21,6 @@ body{
     margin-top: 20px;
 }
 .error{
-    font-family: Bahnschrift;
     color: var(--pink);
     background: linear-gradient(to left, #fd297b, #ff5864);
     -webkit-background-clip: text;
@@ -42,7 +48,6 @@ body{
     -webkit-text-fill-color: transparent;
 }
 .go-back-footer{
-    font-family: Bahnschrift;
     position: absolute;
     bottom: 10px;
     left: 50%;

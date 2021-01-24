@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136117203-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-136117203-1');
+    </script>
+    <title>Daniel · Ribeiro</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Daniel · Ribeiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My portifolio">
+    <meta name="keywords" content="HTML,CSS,PORTIFOLIO">
+    <meta name="author" content="Daniel Ribeiro">
+    <meta property='og:title' content="Daniel's portifolio"/>
+    <meta property='og:image' content='https://danielrssilva.com.br/assets/images/collaborators/me.jpg'/>
+    <meta property='og:description' content='My portifolio'/>
+    <meta property='og:url' content='https://danielrssilva.com.br/'/>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
     <link rel="icon" href="assets/images/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" type="text/css" href="https://v-fonts.com/fonts/bahnschrift">
-    <script src="assets/js/main.js"></script>
 </head>
 <body>
     <header class="mobile-header">
@@ -32,10 +46,11 @@
         <h1 class="title work-title">Meus Trabalhos</h1>
             <nav class="nav-menu">
                 <ul class="works">
-                    <li class="work-icon"><a href="rise.html"><img src="assets/images/rise.png" class="work-image"></a></li>
-                    <li class="work-icon"><a href="paideia.html"><img src="assets/images/paideia.png" class="work-image"></a></li>
-                    <li class="work-icon"><a href="jgtimer.html"><img src="assets/images/jungle.png" class="work-image"></a></li>
-                    <li class="work-icon"><a href="hive.html"><img src="assets/images/hive.png" class="work-image"></a></li>
+                    <li class="work-icon"><a href="/rise"><img src="assets/images/rise.png" class="work-image"></a></li>
+                    <li class="work-icon"><a href="/jgtimer"><img src="assets/images/jungle.png" class="work-image"></a></li>
+                    <li class="work-icon"><a href="/paideia"><img src="assets/images/paideia.png" class="work-image"></a></li>
+                    <li class="work-icon"><a href="/hive"><img src="assets/images/hive.png" class="work-image"></a></li>
+                    <li class="work-icon"><a href="/edimm"><img src="assets/images/edimm.png" class="work-image"></a></li>
                 </ul>
             </nav>
         <img src="assets/images/bg2.svg" class="home-bg2">
@@ -43,30 +58,18 @@
     <section id="about">
         <section class="picture">
             <h1 class="title about-title">Sobre</h1>
-            <div class="about-pic">
-                <img src="assets/images/me.png" alt="Danny" class="my-pic">
-            </div>
+            <img src="assets/images/me.png" alt="Danny" class="about-pic">
         </section>
         <section class="skills">
             <h1 class="title skills-title">Skills</h1>
             <section class="dev-skills">
-                <section class="skill-collection adobe">
-                    <h2 class="skill-title">Adobe XD</h2>
-                    <ul class="pill-collection">
-                        <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
-                    </ul>
-                </section>
                 <section class="skill-collection html">
                     <h2 class="skill-title">HTML</h2>
                     <ul class="pill-collection">
                         <li class="pill-position"><div class="pill"></div>
                         <li class="pill-position"><div class="pill"></div>
                         <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
+                        <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                     </ul>
                 </section>  
@@ -76,10 +79,20 @@
                         <li class="pill-position"><div class="pill"></div>
                         <li class="pill-position"><div class="pill"></div>
                         <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
+                        <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                     </ul>
                 </section>   
+                <section class="skill-collection css">
+                        <h2 class="skill-title">Bootstrap</h2>
+                        <ul class="pill-collection">
+                            <li class="pill-position"><div class="pill"></div>
+                            <li class="pill-position"><div class="pill"></div>
+                            <li class="pill-position"><div class="pill"></div>
+                            <li class="pill-position"><div class="empty pill"></div>
+                            <li class="pill-position"><div class="empty pill"></div>
+                        </ul>
+                    </section> 
             </section>
             <section class="dev-skills">
                 <section class="skill-collection js">
@@ -87,7 +100,7 @@
                     <ul class="pill-collection">
                         <li class="pill-position"><div class="pill"></div>
                         <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
+                        <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                     </ul>
@@ -103,10 +116,10 @@
                     </ul>
                 </section>
                 <section class="skill-collection vue=angular">
-                    <h2 class="skill-title">Angular/VUE</h2>
+                    <h2 class="skill-title">Vue</h2>
                     <ul class="pill-collection">
                         <li class="pill-position"><div class="pill"></div>
-                        <li class="pill-position"><div class="pill"></div>
+                        <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
                         <li class="pill-position"><div class="empty pill"></div>
@@ -117,15 +130,16 @@
     </section>
     <section id="info">
         <h1 class="title info-title">Informações</h1>
-        <h2 class="subtitle">Phone</h2>
+        <h2 class="subtitle">Telefone</h2>
         <p class="info-content">(19) 9 9595-6839</p>
         <h2 class="subtitle">LinkedIn</h2>
         <a href="https://www.linkedin.com/in/danielribeirossilva/" target="blanck" class="info-content link">../danielribeirossilva<img src="assets/images/icons/link.svg" alt="link" class="link-image"></a>
         <h2 class="subtitle">Email</h2>
         <p class="info-content">danielribeirosoaressilva@gmail.com</p>
-        <h2 class="subtitle">ArtStation</h2>
-        <a href="https://www.artstation.com/danhya" target="blanck" class="info-content link">../danhya<img src="assets/images/icons/link.svg" alt="link" class="link-image"></a>
+        <h2 class="subtitle">GitHub</h2>
+        <a href="https://github.com/danielrssilva?tab=repositories" target="blanck" class="info-content link">../danielrssilva<img src="assets/images/icons/link.svg" alt="link" class="link-image"></a>
     </section>
     <footer class="end-bg"><h1 class="thank-text">Thank you!</h1></footer>
 </body>
 </html>
+
