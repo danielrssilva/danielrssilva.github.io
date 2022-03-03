@@ -1,12 +1,15 @@
 import React from "react";
-import ResetStyle from "../../styles/Reset.style";
-import Layout from "./Layout/Layout";
+import ResetStyle from "../../theme/Reset.style";
+import { ThemeContextProvider } from "../../context/Theme/ThemeContext";
+import Layout from "./Layout";
 
 function App() {
   return (
     <>
-      <ResetStyle />
-      <Layout />
+      <ThemeContextProvider>
+        <ResetStyle />
+        <Layout />
+      </ThemeContextProvider>
     </>
   );
 }
