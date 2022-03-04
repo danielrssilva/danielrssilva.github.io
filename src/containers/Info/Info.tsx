@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Square, Title } from "./Info.styles";
+import { Container, Square, Header } from "./Info.styles";
 import Curiosities from "../../components/Curiosities";
 import { H1, H4 } from "../../components/Typography";
 
@@ -7,7 +7,7 @@ const Info = (): JSX.Element => {
   return (
     <Container id="info">
       <Curiosities />
-      <Title>
+      <Header>
         <span>
           <H1>Front-end</H1>
         </span>
@@ -15,7 +15,7 @@ const Info = (): JSX.Element => {
           <H1>Developer</H1>
           <H4>and sometimes UI Designer</H4>
         </span>
-      </Title>
+      </Header>
       <Square $left />
       <Square />
     </Container>

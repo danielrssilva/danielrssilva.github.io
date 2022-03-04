@@ -8,9 +8,6 @@ const Theme = {
   fonts,
   spaces,
   zIndexes,
-  notificationTimer: 5, // Seconds
-  tooltip_delay: 0.8, // In seconds
-  debounceTime: 500, // Milliseconds
 };
 
 export default Theme;

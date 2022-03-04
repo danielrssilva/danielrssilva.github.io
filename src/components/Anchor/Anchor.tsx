@@ -1,11 +1,11 @@
 import React, { ReactElement } from "react";
 import { HashLink } from "react-router-hash-link";
 
-import NavBar from "./Nav.styles";
+import LinkContainer from "../../constants/LinkContainer.styles";
 
-const Nav = (): ReactElement => {
+const Anchor = (): ReactElement => {
   return (
-    <NavBar>
+    <LinkContainer>
       <HashLink smooth to="#about">
         <span>Icon</span> About
       </HashLink>
@@ -15,8 +15,8 @@ const Nav = (): ReactElement => {
       <HashLink smooth to="#projects">
         <span>Icon</span> Projects
       </HashLink>
-    </NavBar>
+    </LinkContainer>
   );
 };
 
-export default Nav;
+export default Anchor;

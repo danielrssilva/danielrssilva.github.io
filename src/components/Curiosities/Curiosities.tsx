@@ -1,5 +1,4 @@
 import React, { ReactElement } from "react";
-import { HashLink } from "react-router-hash-link";
 import { H4 } from "../Typography";
 
 import Container from "./Curiosities.styles";

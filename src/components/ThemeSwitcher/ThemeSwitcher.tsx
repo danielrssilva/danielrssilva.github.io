@@ -16,6 +16,7 @@ const ThemeSwitcher = (): ReactElement => {
           type: "toggleTheme",
         })
       }
+      theme={theme}
     >
       {theme}
     </Button>

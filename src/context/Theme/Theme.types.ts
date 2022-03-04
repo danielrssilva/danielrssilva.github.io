@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 export enum Theme {
-  SUN = "SUN",
-  MOON = "MOON",
+  SUN = "sun",
+  MOON = "moon",
 }
 export interface ThemeState {
   theme: Theme;

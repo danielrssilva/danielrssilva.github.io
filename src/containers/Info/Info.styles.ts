@@ -1,37 +1,45 @@
 import styled from "styled-components";
 import Section from "../../constants/Section.styles";
 import SquareProps from "./Info.types";
+import { Theme } from "../../theme";
+const { spaces, fonts } = Theme;
 
 export const Container = styled(Section)`
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  > div {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
 `;
 
-export const Title = styled.div`
+export const Header = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5rem;
+  padding: ${spaces.xxl};
   max-width: 90%;
-  position: relative;
+
   span:first-of-type:before {
-    content: "<h1>";
-    position: absolute;
-    left: 2rem;
-    top: 4rem;
+    content: "<header>";
+    margin-left: -${spaces.l};
     opacity: 0.5;
-    font-weight: 100;
+    font-weight: ${fonts.weight.light};
   }
   span:nth-child(2) {
     align-self: flex-end;
     position: relative;
     &:after {
-      content: "</h1>";
+      content: "</header>";
       position: absolute;
-      right: -4rem;
-      bottom: -1rem;
+      right: -${spaces.lp};
+      bottom: -${spaces.sp};
       opacity: 0.5;
-      font-weight: 100;
+      font-weight: ${fonts.weight.light};
     }
   }
 `;
@@ -39,12 +47,15 @@ export const Title = styled.div`
 export const Square = styled.div<SquareProps>`
   position: absolute;
   border: 1px solid black;
-  height: 18rem;
-  width: 18rem;
-  left: ${({ $left }) => ($left ? "13rem" : "")};
-  right: ${({ $left }) => ($left ? "" : "13rem")};
-  bottom: ${({ $left }) => ($left ? "20rem" : "")};
-  top: ${({ $left }) => ($left ? "" : "20rem")};
+  height: ${spaces.h};
+  width: ${spaces.h};
+
+  left: ${({ $left }) => $left && spaces.xxl};
+  bottom: ${({ $left }) => $left && spaces.h};
+
+  right: ${({ $left }) => !$left && spaces.xxl};
+  top: ${({ $left }) => !$left && spaces.h};
+
   animation: ${({ $left }) => ($left ? "hoveringLeft 4s" : "hovering 7s")}
     ease-in-out infinite alternate-reverse;
 

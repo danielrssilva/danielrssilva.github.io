@@ -5,7 +5,10 @@ import Container from "./About.style";
 const About = (): JSX.Element => {
   return (
     <Container id="about">
-      <div className="image">Image</div>
+      <div className="image">
+        <Subtitle2>Image</Subtitle2> {/* Change to image */}
+      </div>
+
       <div className="text">
         <div>
           <Subtitle2>
@@ -26,6 +29,7 @@ const About = (): JSX.Element => {
           <Subtitle2>| Vue | React | Typescript | Javascript |</Subtitle2>
         </div>
       </div>
+
       <div className="title">
         <H2>Danny Who?</H2>
       </div>

@@ -1,17 +1,15 @@
 import styled from "styled-components";
+import { Theme } from "../theme";
+const { spaces } = Theme;
 
 const Section = styled.section`
   position: relative;
   max-height: 100vh;
-  width: calc(100vw - 22.1rem);
+  width: ${`calc(100vw - ${spaces.h})`};
   display: flex;
   align-items: center;
   overflow: auto;
   border-bottom: 1px solid black;
-  > div {
-    flex-shrink: 0;
-    flex-grow: 1;
-  }
 `;
 
 export default Section;
