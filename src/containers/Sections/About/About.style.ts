@@ -11,39 +11,34 @@ const Container = styled(Section)`
     ". title"
     "image text";
   padding: ${spaces.l};
-  .image {
-    grid-area: image;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: ${spaces.xxh};
-    height: ${spaces.xxh};
-    border: 1px solid black;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .text {
-    display: grid;
-    grid-template-rows: 2.5fr 0.5fr;
-    grid-auto-flow: row;
-    grid-area: text;
-    align-self: flex-start;
-    padding: ${spaces.none} ${spaces.lp};
-    height: 100%;
-  }
-
-  .tags {
-    align-self: center;
-  }
-
-  .title {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    grid-area: title;
-  }
 `;
 
+export const ImageContainer = styled.div`
+  grid-area: image;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: ${spaces.xxh};
+  height: ${spaces.xxh};
+  border: 0.1rem solid;
+  align-self: center;
+  justify-self: center;
+`;
+export const TitleContainer = styled.div`
+  grid-area: title;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+`;
+export const TextContainer = styled.div`
+  grid-area: text;
+  display: grid;
+  grid-template-rows: 2.5fr 0.5fr;
+  padding: ${spaces.none} ${spaces.lp};
+  height: 100%;
+`;
+export const TagsContainer = styled.div`
+  align-self: center;
+`;
 export default Container;

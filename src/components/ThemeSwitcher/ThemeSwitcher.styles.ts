@@ -11,7 +11,8 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 0.1rem solid ${(props) => props.theme.colors.border};
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 export default Button;

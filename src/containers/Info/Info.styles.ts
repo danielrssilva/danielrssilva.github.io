@@ -46,7 +46,8 @@ export const Header = styled.div`
 
 export const Square = styled.div<SquareProps>`
   position: absolute;
-  border: 1px solid black;
+  border: 0.1rem solid;
+  background: none;
   height: ${spaces.h};
   width: ${spaces.h};
 

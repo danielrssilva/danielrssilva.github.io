@@ -9,7 +9,7 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   overflow: auto;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid;
 `;
 
 export default Section;

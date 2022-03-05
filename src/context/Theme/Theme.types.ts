@@ -5,7 +5,15 @@ export enum Theme {
   MOON = "moon",
 }
 export interface ThemeState {
-  theme: Theme;
+  theme: {
+    name: Theme;
+    colors: {
+      primary: string;
+      black: string;
+      background: string;
+      border: string;
+    };
+  };
 }
 
 export type ThemeAction = {

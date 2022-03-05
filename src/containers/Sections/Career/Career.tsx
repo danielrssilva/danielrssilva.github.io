@@ -6,7 +6,7 @@ const Career = (): JSX.Element => {
   return (
     <Container id="career">
       <H2>Career</H2>
-      this gonna take a while...
+      timeline goes here :D
     </Container>
   );
 };

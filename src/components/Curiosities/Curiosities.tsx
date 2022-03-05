@@ -19,7 +19,7 @@ const Curiosities = (): ReactElement => {
   return (
     <Container>
       {curiositiesList.map((curiosity) => (
-        <H4>{curiosity}</H4>
+        <H4 key={curiosity}>{curiosity}</H4>
       ))}
       {/* npm install react-simple-marquee --save */}
     </Container>

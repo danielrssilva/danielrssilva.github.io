@@ -1,3 +1,4 @@
+import { sun, moon } from "../../theme/Colors";
 import { ThemeState, ThemeAction, Theme } from "./Theme.types";
 
 const ThemeReducer = (state: ThemeState, action: ThemeAction): ThemeState => {
@@ -5,11 +6,11 @@ const ThemeReducer = (state: ThemeState, action: ThemeAction): ThemeState => {
     case "toggleTheme": {
       const { theme } = state;
       const newState = { ...state };
-      if (theme === Theme.MOON) {
-        newState.theme = Theme.SUN;
+      if (theme.name === Theme.MOON) {
+        newState.theme = sun;
         return newState;
       }
-      newState.theme = Theme.MOON;
+      newState.theme = moon;
       return newState;
     }
 

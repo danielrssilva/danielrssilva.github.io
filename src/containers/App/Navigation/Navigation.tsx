@@ -17,7 +17,7 @@ const Navigation = (): JSX.Element => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            border: "1px solid black",
+            border: "0.1rem solid",
           }}
         >
           <Subtitle1>Logo</Subtitle1>

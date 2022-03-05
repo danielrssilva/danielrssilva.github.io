@@ -1,15 +1,10 @@
 import React, { createContext, useReducer } from "react";
-import {
-  ThemeState,
-  ThemeDispatch,
-  ThemeProviderProps,
-  Theme,
-} from "./Theme.types";
+import { ThemeProvider } from "styled-components";
+import { sun } from "../../theme/Colors";
+import { ThemeState, ThemeDispatch, ThemeProviderProps } from "./Theme.types";
 import ThemeReducer from "./ThemeReducer";
 
-const initialState: ThemeState = {
-  theme: Theme.SUN,
-};
+const initialState: ThemeState = { theme: sun };
 
 export const ThemeContext = createContext<ThemeState>(initialState);
 export const ThemeDispatchContext = createContext<ThemeDispatch | undefined>(
@@ -21,7 +16,7 @@ function ThemeContextProvider({ children }: ThemeProviderProps): JSX.Element {
   return (
     <ThemeContext.Provider value={state}>
       <ThemeDispatchContext.Provider value={dispatch}>
-        {children}
+        <ThemeProvider theme={state.theme}>{children}</ThemeProvider>
       </ThemeDispatchContext.Provider>
     </ThemeContext.Provider>
   );

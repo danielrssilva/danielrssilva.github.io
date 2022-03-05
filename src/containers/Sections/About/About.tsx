@@ -1,15 +1,24 @@
 import React from "react";
 import { H2, Subtitle2 } from "../../../components/Typography";
-import Container from "./About.style";
+import Container, {
+  ImageContainer,
+  TitleContainer,
+  TextContainer,
+  TagsContainer,
+} from "./About.style";
 
 const About = (): JSX.Element => {
   return (
     <Container id="about">
-      <div className="image">
+      <ImageContainer>
         <Subtitle2>Image</Subtitle2> {/* Change to image */}
-      </div>
+      </ImageContainer>
 
-      <div className="text">
+      <TitleContainer>
+        <H2>Danny Who?</H2>
+      </TitleContainer>
+
+      <TextContainer>
         <div>
           <Subtitle2>
             Graduating at Federal Institute of São Paulo - System Analysis and
@@ -25,14 +34,10 @@ const About = (): JSX.Element => {
             I'm very curious when it comes to Web Development
           </Subtitle2>
         </div>
-        <div className="tags">
+        <TagsContainer>
           <Subtitle2>| Vue | React | Typescript | Javascript |</Subtitle2>
-        </div>
-      </div>
-
-      <div className="title">
-        <H2>Danny Who?</H2>
-      </div>
+        </TagsContainer>
+      </TextContainer>
     </Container>
   );
 };

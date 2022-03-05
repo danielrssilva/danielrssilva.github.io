@@ -18,7 +18,7 @@ const ThemeSwitcher = (): ReactElement => {
       }
       theme={theme}
     >
-      {theme}
+      {theme.name}
     </Button>
   );
 };
