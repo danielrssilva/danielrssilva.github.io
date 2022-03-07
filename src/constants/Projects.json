@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project name",
+      "img": "img.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien nisl urna massa at. Accumsan pulvinar dui enim eu consectetur massa. Eget consequat metus in senectus. Elementum egestas et consequat, euismod egestas eu arcu, sit",
+      "github": "https://github.com/danielrssilva",
+      "alternateLink": "https://github.com/danielrssilva",
+      "tags": [
+        { "id": 1, "tag": "DEVELOPMENT", "icon": "development.png" },
+        { "id": 2, "tag": "DESIGN", "icon": "design.png" }
+      ],
+      "technologies": [
+        {
+          "id": 1,
+          "type": "AdobeXD",
+          "icon": "adobe.png"
+        },
+        {
+          "id": 2,
+          "type": "React",
+          "icon": "react.png",
+          "langs": [{ "id": 1, "lang": "TYPESCRIPT", "icon": "ts.png" }]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project name",
+      "img": "img.png",
+      "github": "https://github.com/danielrssilva",
+      "alternateLink": "https://github.com/danielrssilva",
+      "tags": [{ "id": 1, "tag": "DESIGN", "icon": "design.png" }],
+      "technologies": [
+        {
+          "id": 1,
+          "type": "AdobeXD",
+          "icon": "adobe.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Project name",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien nisl urna massa at. Accumsan pulvinar dui enim eu consectetur massa. Eget consequat metus in senectus. Elementum egestas et consequat, euismod egestas eu arcu, sit",
+      "github": "https://github.com/danielrssilva",
+      "alternateLink": "https://github.com/danielrssilva",
+      "tags": [{ "id": 1, "tag": "DEVELOPMENT", "icon": "development.png" }],
+      "technologies": [
+        {
+          "id": 2,
+          "type": "Vue",
+          "icon": "vue.png",
+          "langs": [
+            { "id": 2, "lang": "JAVASCRIPT", "icon": "js.png" },
+            { "id": 3, "lang": "CSS", "icon": "css.png" }
+          ]
+        }
+      ]
+    }
+  ]
+}

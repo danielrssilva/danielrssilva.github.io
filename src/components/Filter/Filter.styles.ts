@@ -12,6 +12,7 @@ const Container = styled.fieldset<FilterProps>`
   width: ${spaces.xh};
   top: -${spaces.h};
   border-radius: 0.7rem;
+  border: 0.1rem solid;
   animation: ${({ render }) => (render ? "slidein" : "slideout")} 0.5s forwards;
   legend {
     background: inherit;
