@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "./Normalize.scss";
+@import "./Config.scss";
+
+body {
+  font-family: $primary-font;
+}
+
+body main .c-cursor {
+  border-radius: 0;
+  background: transparent !important;
+  opacity: 1;
+  .c-cursor__inner {
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 1px $white;
+    border-radius: 0;
+    opacity: 1;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.border-source-pink-purple {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #be1365, #7d13be);
+}
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
